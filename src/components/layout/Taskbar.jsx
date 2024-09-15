@@ -34,7 +34,7 @@ export default function Taskbar({
             onClick={toggleStart}
           >
             <img
-              src="/images/apps/windows.png"
+              src="https://preview.redd.it/ne6ukkej06t71.png?auto=webp&s=fbdc1cb1d60306fba3098f7b75a8e01812a97ada"
               alt="windows_logo"
               className="h-8"
             />
@@ -46,7 +46,7 @@ export default function Taskbar({
             }}
           >
             <img
-              src="/images/apps/explorer.png"
+              src="https://rajaniraiyn.github.io/windows11/src/icons/fileExplorer.png"
               alt="windows_logo"
               className="h-7"
             />
@@ -56,7 +56,7 @@ export default function Taskbar({
             onClick={toggleBrowser}
           >
             <img
-              src="/images/apps/edge.png"
+              src="https://seekicon.com/free-icon-download/microsoft-edge_2.svg"
               alt="windows_logo"
               className="h-8"
             />

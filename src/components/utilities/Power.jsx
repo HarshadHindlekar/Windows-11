@@ -16,7 +16,7 @@ function Power({ toggleStart, setInput, setIsSleeping, setActionType }) {
     setActionType("shutdown");
     toggleStart();
     setTimeout(() => {
-      navigate("/");
+      navigate("/Windows-11/");
     }, 2700);
   }
 

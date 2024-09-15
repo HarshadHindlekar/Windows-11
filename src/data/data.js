@@ -264,35 +264,35 @@ const appsData = [
   {
     id: 1,
     name: "Google Chrome",
-    icon: "/images/apps/chrome.png",
+    icon: "https://window11clone.netlify.app/assets/chromeicon.png",
     action: "browser",
     size: "w-18 h-18",
   },
   {
     id: 2,
     name: "About Me",
-    icon: "/images/apps/folder.png",
+    icon: "https://icon-library.com/images/windows-explorer-icon/windows-explorer-icon-19.jpg",
     action: "explorer",
-    size: "w-18 h-18",
+    size: "w-10 h-12",
   },
   {
     id: 3,
     name: "Recycle Bin",
-    icon: "/images/apps/recyclebin.png",
+    icon: "https://img.icons8.com/fluency/452/full-recycle-bin.png",
     action: "recycle",
     size: "w-14 h-14",
   },
   {
     id: 4,
     name: "Microsoft Edge",
-    icon: "/images/apps/edge.png",
+    icon: "https://seekicon.com/free-icon-download/microsoft-edge_2.svg",
     action: "browser",
-    size: "w-11 h-11",
+    size: "w-10 h-10",
   },
   {
     id: 5,
     name: "Calculator",
-    icon: "/images/apps/calculator.png",
+    icon: "https://windows11clone.netlify.app/Assets/pinned-icons/calculator.png",
     action: "calculator",
     size: "w-11 h-11",
   },
@@ -326,6 +326,6 @@ export default appsData;
 
 // Social Media Links
 export const socialMediaLinks = {
-  linkedin: "https://www.linkedin.com/in/mishanpoudel/",
+  linkedin: "https://www.linkedin.com/in/harshad-hindlekar-b94a07236/",
   github: githubLink,
 };

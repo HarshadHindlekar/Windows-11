@@ -1,20 +1,13 @@
 import React, { useState, useCallback } from "react";
 import Login from "../components/user/Login";
 import Slider from "../components/utilities/Slider";
-import MobileDetection from "../components/utilities/MobileDetection";
+import {isMobile} from 'react-device-detect';
 
 function Lockscreen() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
   // Use useCallback to memoize the function and avoid unnecessary re-renders
   const toggleMenu = useCallback(() => {
     setIsMenuOpen((prev) => !prev);
-  }, []);
-
-  // Callback for mobile detection
-  const handleMobileDetection = useCallback((mobile) => {
-    setIsMobile(mobile);
   }, []);
 
   // Conditional rendering for mobile detection
@@ -31,7 +24,6 @@ function Lockscreen() {
 
   return (
     <>
-      {!isMobile && <MobileDetection onDetectMobile={handleMobileDetection} />}
 
       <div
         className="absolute bg-black h-screen w-full blur-sm"

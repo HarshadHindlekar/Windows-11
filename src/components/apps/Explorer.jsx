@@ -1,6 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
 import Draggable from "react-draggable";
 import AboutMe from "../apps/AboutMe";
+import edu from "../assets/images/folders/edu.png"
+import gallery from "../assets/images/folders/gallery.png"
+import copy from "../assets/images/options/copy.png"
+import cut from "../assets/images/options/cut.png"
+import deleteico from "../assets/images/options/delete.png"
+import details from "../assets/images/options/details.png"
+import dots from '../assets/images/options/dots.png'
+import filter from '../assets/images/options/filter.png'
+import newico from '../assets/images/options/new.png'
+import paste from '../assets/images/options/paste.png'
+import rename from '../assets/images/options/rename.png'
+import share from '../assets/images/options/share.png'
+import sort from '../assets/images/options/sort.png'
+import view from '../assets/images/options/view.png'
 
 const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
   const [page, setPage] = useState("About Me");
@@ -53,7 +67,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
               <div className="flex justify-between items-center w-full">
                 <div className="pl-2 text-xs flex">
                   <img
-                    src={`/images/folders/${icon}.png`}
+                    src={`https://rajaniraiyn.github.io/windows11/src/icons/fileExplorer.png`}
                     alt="main icons"
                     className="w-5 h-5 mr-2"
                   />
@@ -117,7 +131,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
               <div className="flex items-center">
                 <div className="flex items-center justify-center w-24 h-full text-xs gap-1 border-neutral-700 border-r-[1.5px] opacity-45">
                   <img
-                    src="/images/options/new.png"
+                    src={newico}
                     alt="new"
                     className="w-5 h-5"
                   />
@@ -128,32 +142,32 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                 </div>
                 <div className="flex h-full w-72 justify-around items-center border-neutral-700 border-r-[1.5px] opacity-45">
                   <img
-                    src="/images/options/cut.png"
+                    src={cut}
                     alt="cut"
                     className="h-5 w-5"
                   />
                   <img
-                    src="/images/options/copy.png"
+                    src={copy}
                     alt="copy"
                     className="h-5 w-5"
                   />
                   <img
-                    src="/images/options/paste.png"
+                    src={paste}
                     alt="paste"
                     className="h-7 w-7"
                   />
                   <img
-                    src="/images/options/rename.png"
+                    src={rename}
                     alt="rename"
                     className="h-5 w-5"
                   />
                   <img
-                    src="/images/options/share.png"
+                    src={share}
                     alt="share"
                     className="h-5 w-5"
                   />
                   <img
-                    src="/images/options/delete.png"
+                    src={deleteico}
                     alt="delete"
                     className="h-5 w-5"
                   />
@@ -161,7 +175,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                 <div className="flex h-full items-center w-72 justify-around border-neutral-700 border-r-[1.5px]">
                   <div className="flex items-center justify-center h-full text-xs gap-1 opacity-45">
                     <img
-                      src="/images/options/sort.png"
+                      src={sort}
                       alt="sort"
                       className="w-5 h-5"
                     />
@@ -172,7 +186,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                   </div>
                   <div className="flex items-center justify-center h-full text-xs gap-1 opacity-80">
                     <img
-                      src="/images/options/view.png"
+                      src={view}
                       alt="view"
                       className="w-5 h-5"
                     />
@@ -183,7 +197,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                   </div>
                   <div className="flex items-center justify-center h-full text-xs gap-1 opacity-80">
                     <img
-                      src="/images/options/filter.png"
+                      src={filter}
                       alt="filter"
                       className="w-5 h-5"
                     />
@@ -194,14 +208,14 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                   </div>
                 </div>
                 <img
-                  src="/images/options/dots.png"
+                  src={dots}
                   alt="dots"
                   className="w-3.5 h-3.5 ml-4"
                 />
               </div>
               <div className="flex items-center mr-8 text-xs">
                 <img
-                  src="/images/options/details.png"
+                  src={details}
                   alt="details"
                   className="w-5 h-5 mr-1"
                 />
@@ -215,7 +229,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                     <div className="border-b-[1.5px] border-neutral-700 h-20">
                       <div className="flex items-center justify-center mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                         <img
-                          src="/images/folders/home.png"
+                          src="https://www.elevenforum.com/data/attachments/30/30188-c9f25938bd40f9c2e3af267cc96b3e28.jpg"
                           alt="details"
                           className="w-5 h-5 mr-1"
                         />
@@ -223,7 +237,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex items-center justify-center mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                         <img
-                          src="/images/folders/gallery.png"
+                          src={gallery}
                           alt="details"
                           className="w-5 h-5 mr-1"
                         />
@@ -233,7 +247,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                     <div className="mt-3.5 border-b-[1.5px] border-neutral-700 h-52">
                       <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                         <img
-                          src="/images/folders/Desktop.ico"
+                          src="https://preview.redd.it/p4srcp8sbyf71.png?width=1080&crop=smart&auto=webp&s=1e675242a42d0826c4e43f06a33f5ae4dd5e68d0"
                           alt="details"
                           className="w-5 h-5 mr-1"
                         />
@@ -244,7 +258,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                         <img
-                          src="/images/folders/Downloads.ico"
+                          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/bb62785b-c54a-44e6-94bf-1ccca295023c/delruxq-390edd6a-59c7-47d3-a150-b8460f53119c.png"
                           alt="details"
                           className="w-5 h-5 mr-1"
                         />
@@ -255,7 +269,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                         <img
-                          src="/images/folders/Documents.ico"
+                          src="https://img.icons8.com/fluency/452/documents-folder--v2.png"
                           alt="details"
                           className="w-5 h-5 mr-1"
                         />
@@ -266,7 +280,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                         <img
-                          src="/images/folders/Photos.ico"
+                          src="https://img.icons8.com/fluency/452/pictures-folder--v2.png"
                           alt="details"
                           className="w-5 h-5 mr-1"
                         />
@@ -277,7 +291,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                         <img
-                          src="/images/folders/Music.ico"
+                          src="https://img.icons8.com/fluency/512/photos-folder--v2.png"
                           alt="details"
                           className="w-5 h-5 mr-1"
                         />
@@ -288,7 +302,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex relative items-center pl-6 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm">
                         <img
-                          src="/images/folders/Videos.ico"
+                          src="http://icons.iconseeker.com/png/fullsize/aruzo-dark-blue/folder-movies-11.png"
                           alt="details"
                           className="w-5 h-5 mr-1"
                         />
@@ -301,7 +315,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                     <div className="mt-3.5 border-b-[1.5px] border-neutral-700 h-52">
                       <div className="flex items-center pl-12 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm relative">
                         <img
-                          src="/images/folders/Computer.ico"
+                          src="https://rajaniraiyn.github.io/windows11/src/icons/Computer.png"
                           alt="details"
                           className="w-4 h-4 mr-1"
                         />
@@ -312,7 +326,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex items-center pl-12 mr-8 text-xs hover:bg-neutral-700 w-full h-8 rounded-sm relative">
                         <img
-                          src="/images/folders/Network.ico"
+                          src="https://telegram-stickers.github.io/public/stickers/windows-10/13.png"
                           alt="details"
                           className="w-4 h-4 mr-1"
                         />
@@ -333,7 +347,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                     <div className="h-32 w-[87vh] mr-32 grid grid-cols-3 grid-rows-2">
                       <div className="flex justify-center items-center h-16 w-full hover:bg-neutral-700 rounded-md hover:bg-opacity-30">
                         <img
-                          src="/images/folders/Desktop.ico"
+                          src="https://preview.redd.it/p4srcp8sbyf71.png?width=1080&crop=smart&auto=webp&s=1e675242a42d0826c4e43f06a33f5ae4dd5e68d0"
                           alt="Desktop"
                           className="w-14 h-14 mr-4"
                         />
@@ -351,7 +365,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex justify-center items-center h-16 w-full hover:bg-neutral-700 rounded-md hover:bg-opacity-30">
                         <img
-                          src="/images/folders/Downloads.ico"
+                          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/bb62785b-c54a-44e6-94bf-1ccca295023c/delruxq-390edd6a-59c7-47d3-a150-b8460f53119c.png"
                           alt="Downloads"
                           className="w-14 h-14 mr-4"
                         />
@@ -369,7 +383,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex justify-center items-center h-16 w-full hover:bg-neutral-700 rounded-md hover:bg-opacity-30">
                         <img
-                          src="/images/folders/Documents.ico"
+                          src="https://img.icons8.com/fluency/452/documents-folder--v2.png"
                           alt="Documents"
                           className="w-14 h-14 mr-4"
                         />
@@ -387,7 +401,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex justify-center items-center h-16 w-full hover:bg-neutral-700 rounded-md hover:bg-opacity-30">
                         <img
-                          src="/images/folders/Photos.ico"
+                          src="https://img.icons8.com/fluency/452/pictures-folder--v2.png"
                           alt="Pictures"
                           className="w-14 h-14 mr-4"
                         />
@@ -405,7 +419,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex justify-center items-center h-16 w-full hover:bg-neutral-700 rounded-md hover:bg-opacity-30">
                         <img
-                          src="/images/folders/Music.ico"
+                          src="https://img.icons8.com/fluency/512/photos-folder--v2.png"
                           alt="Music"
                           className="w-14 h-14 mr-4"
                         />
@@ -423,7 +437,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                       </div>
                       <div className="flex justify-center items-center h-16 w-full hover:bg-neutral-700 rounded-md hover:bg-opacity-30">
                         <img
-                          src="/images/folders/Videos.ico"
+                          src="http://icons.iconseeker.com/png/fullsize/aruzo-dark-blue/folder-movies-11.png"
                           alt="Videos"
                           className="w-14 h-14 mr-4"
                         />
@@ -471,7 +485,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                     }}
                   >
                     <img
-                      src="/images/folders/me.png"
+                      src="https://rajaniraiyn.github.io/windows11/src/icons/user.png"
                       alt="me"
                       className="w-5 h-5 mr-2.5"
                     />
@@ -488,7 +502,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                     }}
                   >
                     <img
-                      src="/images/folders/edu.png"
+                      src={edu}
                       alt="edu"
                       className="w-5 h-5 mr-2.5"
                     />
@@ -505,7 +519,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                     }}
                   >
                     <img
-                      src="/images/folders/skills.png"
+                      src="https://icon-library.com/images/folder-icon-for-windows/folder-icon-for-windows-3.jpg"
                       alt="skills"
                       className="w-5 h-5 mr-2.5"
                     />
@@ -522,7 +536,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                     }}
                   >
                     <img
-                      src="/images/folders/projects.png"
+                      src="https://www.icesi.edu.co/servicios/wp-content/uploads/2022/11/iconproject.png"
                       alt="My Stuffs"
                       className="w-5 h-5 mr-2.5"
                     />
@@ -539,7 +553,7 @@ const Explorer = ({ isExplorerOpen, toggleExplorer, aboutMe, bounds }) => {
                     }}
                   >
                     <img
-                      src="/images/folders/resume.png"
+                      src="https://img.icons8.com/fluency/452/parse-resumes.png"
                       alt="Resume"
                       className="w-5 h-5 mr-2.5"
                     />

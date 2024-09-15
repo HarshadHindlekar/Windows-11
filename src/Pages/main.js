@@ -13,6 +13,14 @@ import Torch from "../components/apps/Torch";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import appsData from "../data/data";
+import one from '../components/assets/images/fun/1.gif'
+import two from '../components/assets/images/fun/2.jpg'
+import three from '../components/assets/images/fun/3.jpg'
+import four from '../components/assets/images/fun/4.jpg'
+import xp from '../components/assets/images/fun/xp.jpg'
+import lullaby from '../components/assets/audio/lullaby.mp3'
+import sleep from '../components/assets/audio/sleep.mp3'
+import shutdown from '../components/assets/audio/shutdown.mp3'
 
 function Main() {
   const constraintsRef = useRef(null);
@@ -73,10 +81,10 @@ function Main() {
 
   const images = useMemo(
     () => [
-      "/images/fun/1.gif",
-      "/images/fun/2.jpg",
-      "/images/fun/3.jpg",
-      "/images/fun/4.jpg",
+      one,
+      two,
+      three,
+      four,
     ],
     []
   );
@@ -107,19 +115,19 @@ function Main() {
                 className="w-64 h-64 object-cover rounded-lg shadow-lg"
               />
               <div>Windows is now sleeping💤</div>
-              <audio src="/audio/sleep.mp3" autoPlay loop />
-              <audio src="/audio/lullaby.mp3" autoPlay loop />
+              <audio src={sleep} autoPlay loop />
+              <audio src={lullaby} autoPlay loop />
             </div>
           )}
           {actionType === "shutdown" && (
             <div className="flex flex-col gap-4 justify-center items-center w-full h-screen">
               <img
-                src="/images/fun/xp.jpg"
+                src={xp}
                 alt="Random"
                 className="w-1/2 h-1/2 object-cover rounded-lg shadow-lg"
               />
               <div>BYE BYE👋🏻</div>
-              <audio src="/audio/shutdown.mp3" autoPlay />
+              <audio src={shutdown} autoPlay />
             </div>
           )}
         </div>
@@ -164,7 +172,7 @@ function Main() {
               onDoubleClick={() => toggleWindow("app", "terminal")}
             >
               <img
-                src="images/apps/terminal.png"
+                src="https://rajaniraiyn.github.io/windows11/src/icons/terminal.png"
                 alt="terminal"
                 className="w-10 h-10"
               />

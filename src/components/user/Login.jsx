@@ -16,7 +16,7 @@ function Login({ toggleLogin }) {
       setLoading(true);
       // Simulating a delay for demonstration purposes
       setTimeout(() => {
-        navigate(`/${name}`);
+        navigate(`/Windows-11/${name}`);
         setLoading(false);
       }, 3000);
     } catch (err) {

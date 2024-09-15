@@ -6,7 +6,7 @@ import {
   githubRepos,
 } from "../../data/data";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-// import myPic from '../../../public/images/passport 1.png'
+import myPic from '../assets/images/passport 1.png';
 const SkillItem = ({ skillItem, isTechStack = false, iconSize = 15 }) => {
   if (!skillItem || !skillItem.icon) {
     return null;
@@ -93,7 +93,7 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
           <div className="hero min-h-auto justify-start">
             <div className="hero-content flex-col lg:flex-row">
               <img
-                src="./images/passport 1.png"
+                src={myPic}
                 className="max-w-sm rounded-lg shadow-2xl h-96 w-96"
                 alt="Profile"
               />
@@ -173,7 +173,7 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
                   onDoubleClick={() => handleDivClick(1)}
                 >
                   <img
-                    src="/images/apps/folder.png"
+                    src="https://i.redd.it/hbxy0q8sbyf71.png"
                     alt="Technical"
                     className="w-12 h-12"
                   />
@@ -187,7 +187,7 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
                   onDoubleClick={() => handleDivClick(2)}
                 >
                   <img
-                    src="/images/apps/folder.png"
+                    src="https://i.redd.it/hbxy0q8sbyf71.png"
                     alt="Soft"
                     className="w-12 h-12"
                   />
@@ -201,7 +201,7 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
                   onDoubleClick={() => handleDivClick(3)}
                 >
                   <img
-                    src="/images/apps/folder.png"
+                    src="https://i.redd.it/hbxy0q8sbyf71.png"
                     alt="Design"
                     className="w-12 h-12"
                   />
@@ -222,7 +222,7 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
               <div className="flex absolute top-0 gap-1">
                 <div className="w-[6.5em] h-28 flex flex-col pt-2 items-center rounded-md hover:bg-white hover:bg-opacity-20">
                   <img
-                    src="/images/folders/communication.png"
+                    src="https://www.pinclipart.com/picdir/big/408-4088995_communication-icon-transparent-transparent-communication-clipart-png-download.png"
                     alt="Communication"
                     className="w-12 h-12"
                   />
@@ -232,7 +232,7 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
                 </div>
                 <div className="w-[6em] h-28 flex flex-col pt-2 items-center rounded-md hover:bg-white hover:bg-opacity-20">
                   <img
-                    src="/images/folders/teamwork.png"
+                    src="https://img.icons8.com/fluency/452/documents-folder--v2.png"
                     alt="Teamwork"
                     className="w-12 h-12"
                   />
@@ -242,7 +242,7 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
                 </div>
                 <div className="w-[5em] h-28 flex flex-col pt-2 items-center rounded-md hover:bg-white hover:bg-opacity-20">
                   <img
-                    src="/images/folders/problem.png"
+                    src="https://icon-library.com/images/icon-problem/icon-problem-10.jpg"
                     alt="Problem"
                     className="w-12 h-12"
                   />
@@ -252,7 +252,7 @@ const AboutMe = ({ page, handleDivClick, expandedDiv }) => {
                 </div>
                 <div className="w-[6em] h-28 flex flex-col justify-center items-center rounded-md hover:bg-white hover:bg-opacity-20">
                   <img
-                    src="/images/folders/management.png"
+                    src="https://winaero.com/blog/wp-content/uploads/2021/05/taskmgr-task-manager-fluent-modern-icon.png"
                     alt="Project"
                     className="w-12 h-12"
                   />

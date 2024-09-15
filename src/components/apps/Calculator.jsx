@@ -157,7 +157,7 @@ const Calculator = ({ isAppOpen, toggleCalculator }) => {
                   %
                 </button>
                 <button
-                  onClick={() => appendToDisplay("/")}
+                  onClick={() => appendToDisplay("/Windows-11/")}
                   className="p-6 text-center bg-yellow-600 rounded-full hover:bg-opacity-60 focus:outline-none"
                 >
                   /

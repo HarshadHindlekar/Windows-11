@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import switchAudio from "../assets/audio/switch.mp3"
 
 export default function Torch({ input, setInput }) {
   const cursorSize = 7000;
@@ -22,7 +23,7 @@ export default function Torch({ input, setInput }) {
     left: "50%",
   });
 
-  const audio = useMemo(() => new Audio("/audio/switch.mp3"), []);
+  const audio = useMemo(() => new Audio(switchAudio), []);
 
   useEffect(() => {
     audio.load();
@@ -102,7 +103,7 @@ export default function Torch({ input, setInput }) {
           ></motion.div>
           <div className="w-full h-screen absolute top-0 bg-transparent z-50">
             <img
-              src="images/apps/switch.png"
+              src="http://media.istockphoto.com/photos/light-switch-picture-id465142108?k=6&m=465142108&s=612x612&w=0&h=EiKkxfTAYkFlJd6jNRk8u3nLcZ_MdFtS6ci8zfkAMpU="
               alt="switch"
               className="h-10 w-10 z-50 absolute hover:cursor-pointer"
               style={{ top: randomPosition.top, left: randomPosition.left }}
