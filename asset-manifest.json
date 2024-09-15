@@ -1,13 +1,24 @@
 {
   "files": {
     "main.css": "/Windows-11/static/css/main.377c2944.css",
-    "main.js": "/Windows-11/static/js/main.5bdcb53e.js",
+    "main.js": "/Windows-11/static/js/main.9e345560.js",
+    "static/media/lullaby.mp3": "/Windows-11/static/media/lullaby.1fc01cdb40955913f1c9.mp3",
+    "static/media/passport 1.png": "/Windows-11/static/media/passport 1.e7e5ba6f38159d5c9541.png",
+    "static/media/1.gif": "/Windows-11/static/media/1.2af49d18837b2e738130.gif",
+    "static/media/xp.jpg": "/Windows-11/static/media/xp.59b213d5e061a5bf7736.jpg",
+    "static/media/sleep.mp3": "/Windows-11/static/media/sleep.5bddcab226e469096776.mp3",
+    "static/media/shutdown.mp3": "/Windows-11/static/media/shutdown.9f3f0242afcd78e94c09.mp3",
+    "static/media/gallery.png": "/Windows-11/static/media/gallery.e4f6e1d7f50b5823a37c.png",
+    "static/media/switch.mp3": "/Windows-11/static/media/switch.4d315684b5c3666bf84d.mp3",
+    "static/media/3.jpg": "/Windows-11/static/media/3.be4c735c1f911846a3bd.jpg",
+    "static/media/4.jpg": "/Windows-11/static/media/4.af9046f0c93f0f76653c.jpg",
+    "static/media/2.jpg": "/Windows-11/static/media/2.382443d4f08c9c6099ba.jpg",
     "index.html": "/Windows-11/index.html",
     "main.377c2944.css.map": "/Windows-11/static/css/main.377c2944.css.map",
-    "main.5bdcb53e.js.map": "/Windows-11/static/js/main.5bdcb53e.js.map"
+    "main.9e345560.js.map": "/Windows-11/static/js/main.9e345560.js.map"
   },
   "entrypoints": [
     "static/css/main.377c2944.css",
-    "static/js/main.5bdcb53e.js"
+    "static/js/main.9e345560.js"
   ]
 }
